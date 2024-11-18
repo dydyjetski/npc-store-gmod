@@ -1,0 +1,29 @@
+NPC_ARMORY = NPC_ARMORY or {}
+NPC_ARMORY.Language = NPC_ARMORY.Language or {}
+
+NPC_ARMORY.Language["es"] = {  
+    ["armory"] = "Comercio",
+    ["principalDesc"] = "Menú Principal",
+    ["inSubmenu"] = "Aquí está el catálogo",
+    ["robberyButton"] = "                        Robar",
+    ["closeButton"] = "Cerrar",
+    ["invalidWeapon"] = "Arma inválida.",
+    ["haveWeapon"] = "Ya posees esta arma.",
+    ["donthaveMoney"] = "No tienes suficiente dinero.",
+    ["buy"] = "Has comprado ",
+    ["for"] = " por ",
+    ["needtoWait"] = "Debes esperar ",
+    ["afterWait"] = " segundos antes de robar de nuevo.",
+    ["distanceToNPC"] = "Debes estar más cerca del NPC para comenzar un robo.",
+    ["needWeapon"] = "Debes tener un arma en la mano para robar.",
+    ["alreadyRobbery"] = "Ya estás robando.",
+    ["robberyFailDistance"] = "Te has alejado demasiado, el robo ha fallado.",
+    ["needWeaponRobbery"] = "Mantén tu arma en la mano para continuar con el robo.",
+    ["robbery"] = "Robo en curso... Por favor, espera ",
+    ["sec"] = " segundos",
+    ["goodRobbery"] = "¡Robo exitoso! Has ganado ",
+    ["msgifGunDealer"] = "Hay un armero en la ciudad. Encuéntralo",
+    ["msgRefuseAccess"] = "Acceso denegado. Tienes un rango restringido.",
+    ["TextAboveNPC"] = "Traficante de armas", -- texto sobre el npc
+    ["globalRobberyAlert"] = "¡Robo en progreso en la tienda!",
+}
