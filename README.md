@@ -1,19 +1,19 @@
 
  ![920x260](https://github.com/user-attachments/assets/9b7f3d7a-8540-4da0-a522-ba6675c7baa5)
 
- NPC Store 
+Easily create your personalized shop! This addon allows you to configure a merchant NPC with customizable categories (as many as you want) tailored to your needs. It also lets your players rob the NPC, creating immersive RP scenarios. Perfect for any server looking for a highly customizable NPC.
 
-Créez votre boutique personnalisée en toute simplicité ! Cet addon vous permet de configurer un PNJ marchand avec des catégories (autant que vous souhaitez) personnalisables adaptées à vos besoins, mais aussi laisser vos joueurs braquer ce PNJ afin de crée des actions RP. Idéal pour tout serveurs cherchant un PNJ configurable comme ils le souhaitent.
-
-    Langue : FR, EN, DE, RU, ES
-    Devise personnalisable
-    Personnalisation du NPC : Modèle, couleur, etc.
+    Languages: FR, EN, DE, RU, ES
+    Customizable Currency
+    NPC Customization: Model, color, etc.
     Restrictions:
-        Par métier en ville (possible d'enlever cette restriction pour certains grades)
-        Par rang
-        Par niveau (compatible avec DarkRP Leveling System)
-    Réductions applicable pour certains grades
-    Système de braquage:
-        Montant gagné, durée, cooldown, arme requise (optionnel)
-    Catégories d'items:
-        Nom de la catégorie, items (nom, classe SWEP, description optionnelle, prix)!
+        By jobs (with an option to remove this restriction for specific ranks)
+        By rank
+        By level (compatible with the DarkRP Leveling System)
+    Discounts: Applicable for specific ranks
+    Robbery System:
+        Earned amount, duration, cooldown, required weapon (optional)
+    Item Categories:
+        Category name, items (name, SWEP class, optional description, price)
+
+Showcase video : https://www.youtube.com/watch?v=yka3o3eU7Cw
