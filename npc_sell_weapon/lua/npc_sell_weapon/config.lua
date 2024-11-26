@@ -47,7 +47,7 @@ NPC_ARMORY.Config.Robbery = true // true = enable robbery, false = disable robbe
 NPC_ARMORY.Config.RobberyReward = 5000 // FR: Récompense du braquage | EN: Robbery reward
 NPC_ARMORY.Config.RobberyTimer = 10 // FR: Durée du braquage | EN: Robbery duration
 NPC_ARMORY.Config.RobberyCooldown = 30 // FR: Temps de recharge du braquage | EN: Robbery cooldown
-NPC_ARMORY.Config.NeedWeaponForRobbery = false // FR: Besoin d'une arme pour braquer? | EN: Need a weapon to rob?
+NPC_ARMORY.Config.NeedWeaponForRobbery = true // FR: Besoin d'une arme pour braquer? | EN: Need a weapon to rob?
 NPC_ARMORY.Config.ValidRobberyWeapons = {
     "fas2_ak47",   -- Remplacez par les noms d'armes valides
     "weapon_357", -- class of allowed weapons
@@ -61,6 +61,11 @@ NPC_ARMORY.Config.ValidRobberyWeapons = {
 NPC_ARMORY.Config.Categories = {
     {
         name = "Fusil d'assaut", -- Nom de la catégorie
+        useZone = false, -- Activer la vérification de la zone pour cette catégorie | EN: Enable zone check for this category
+        zone = {
+            boxStart = Vector(-4330.272949, -5367.570801, 23.290604), -- Coin 1 de la zone | EN: Corner 1 of the zone
+            boxEnd = Vector(-4985.067383, -5654.383301, 322.582397), -- Coin opposé de la zone | EN: Opposite corner of the zone
+        },
         items = { -- Les armes dans cette catégorie
             ["Ak-47"] = {
                 name = "AK-47",
@@ -78,27 +83,15 @@ NPC_ARMORY.Config.Categories = {
     },
     {
         name = "BEST ADDONS!", -- Nom de la catégorie
+        useZone = false, -- Activer la vérification de la zone pour cette catégorie | EN: Enable zone check for this category
+        zone = {
+            boxStart = Vector(-4330.272949, -5367.570801, 23.290604), -- Coin 1 de la zone | EN: Corner 1 of the zone
+            boxEnd = Vector(-4985.067383, -5654.383301, 322.582397), -- Coin opposé de la zone | EN: Opposite corner of the zone
+        },
         items = { -- Les armes dans cette catégorie
             ["Bayonet Knife"] = {
                 name = "Bayonet Knife",
                 entity = "csgo_bayonet",
-                description = "",
-                price = 400,
-            },
-            ["Bayonet Knifee"] = {
-                name = "Bayonet Knifee",
-                entity = "csgo_bayonet",
-                description = "",
-                price = 400,
-            },
-        }
-    },
-    {
-        name = "Bonjour", -- Nom de la catégorie
-        items = { -- Les armes dans cette catégorie
-            ["BANANA"] = {
-                name = "BANANA",
-                entity = "weapon_banana_pistol",
                 description = "",
                 price = 400,
             },

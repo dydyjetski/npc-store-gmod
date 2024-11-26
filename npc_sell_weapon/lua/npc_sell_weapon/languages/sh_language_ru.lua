@@ -26,4 +26,5 @@ NPC_ARMORY.Language["ru"] = {
     ["msgRefuseAccess"] = "Доступ запрещен. У вас ограниченный ранг.",
     ["TextAboveNPC"] = "Оружейник", -- текст над NPC
     ["globalRobberyAlert"] = "Ограбление в магазине в процессе!",
+    ["notInZone"] = "Вы не можете покупать в этой зоне",
 }

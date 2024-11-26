@@ -26,4 +26,5 @@ NPC_ARMORY.Language["fr"] = {
     ["msgRefuseAccess"] = "Accès refusé. Vous avez un grade restreint.",
     ["TextAboveNPC"] = "Armurier", -- texte au dessus du npc
     ["globalRobberyAlert"] = "Braquage en cours dans le magasin !",
+    ["notInZone"] = "Vous ne pouvez pas acheter dans cette zone",
 }

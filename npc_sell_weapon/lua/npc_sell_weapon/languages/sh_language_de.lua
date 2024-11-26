@@ -26,4 +26,5 @@ NPC_ARMORY.Language["de"] = {
     ["msgRefuseAccess"] = "Zugriff verweigert. Du hast einen eingeschränkten Rang.",
     ["TextAboveNPC"] = "Waffendealer", -- Text über dem NPC
     ["globalRobberyAlert"] = "Raubüberfall im Laden im Gange!",
+    ["notInZone"] = "Du kannst in dieser Zone nicht kaufen",
 }

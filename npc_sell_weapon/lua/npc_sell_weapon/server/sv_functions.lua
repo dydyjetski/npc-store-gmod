@@ -20,6 +20,10 @@ function NPC_ARMORY:Notify(pPlayer, sContent, id)
 	
 end
 
+local function isPlayerInAABox(ply, zone)
+    local playerPos = ply:GetPos() 
+    return playerPos:WithinAABox(zone.boxStart, zone.boxEnd)
+end
 
 net.Receive("DIDI:BUY_WEAPON", function(len, ply)
 	
@@ -32,8 +36,13 @@ net.Receive("DIDI:BUY_WEAPON", function(len, ply)
     for _, category in ipairs(NPC_ARMORY.Config.Categories) do
         if category.items[sWeapon] then
             tWeapon = category.items[sWeapon]
+			cat = category
             break
         end
+    end
+
+    if cat.useZone and cat.zone and isPlayerInAABox(ply, cat.zone) then
+        return NPC_ARMORY:Notify(ply, NPC_ARMORY.GetSentence("notInZone"), 1)
     end
 
 	if not tWeapon then
