@@ -9,12 +9,8 @@ local function IncAdd(f) return Inclu(f), AddCS(f) end
 
 -- Load addon files
 IncAdd("config.lua")
+IncAdd("languages.lua")
 IncAdd("shared/sh_functions.lua")
-IncAdd("languages/sh_language_fr.lua")
-IncAdd("languages/sh_language_en.lua")
-IncAdd("languages/sh_language_es.lua")
-IncAdd("languages/sh_language_ru.lua")
-IncAdd("languages/sh_language_de.lua")
 -- IncAdd("constants.lua")
 
 if SERVER then
