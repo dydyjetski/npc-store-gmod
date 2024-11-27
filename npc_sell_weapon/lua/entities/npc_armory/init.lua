@@ -12,14 +12,18 @@ function ENT:Initialize()
     self:SetSolid(SOLID_BBOX)
     self:SetUseType(SIMPLE_USE)
     self:DropToFloor()
+    
 end
 
 local cooldowns = {}
 
 function ENT:Use(activator, caller)
+    
     if not IsValid(activator) or not activator:IsPlayer() then return end
-    local distance = activator:GetPos():Distance(self:GetPos())
-    if distance > 100 then return end
+    
+    local distance = activator:GetPos():DistToSqr(self:GetPos())
+    if distance > 1000 then return end
+    
     local steamID = activator:SteamID() 
     if cooldowns[steamID] and CurTime() < cooldowns[steamID] then
         return 
@@ -78,6 +82,8 @@ function ENT:Use(activator, caller)
     if NPC_ARMORY.Config.SayHi then
         self:EmitSound("vo/npc/male01/hi01.wav")
     end
+    
     net.Start("DIDI:OPEN_NPC_ARMORY")
     net.Send(activator)
+    
 end
